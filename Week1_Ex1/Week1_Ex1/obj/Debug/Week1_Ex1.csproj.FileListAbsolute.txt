@@ -1,0 +1,9 @@
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\bin\Debug\Week1_Ex1.exe.config
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\bin\Debug\Week1_Ex1.exe
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\bin\Debug\Week1_Ex1.pdb
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.csprojResolveAssemblyReference.cache
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.frmFinancialCalculator.resources
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.Properties.Resources.resources
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.csproj.GenerateResource.Cache
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.exe
+c:\users\navjit\documents\visual studio 2015\Projects\Week1_Ex1\Week1_Ex1\obj\Debug\Week1_Ex1.pdb
