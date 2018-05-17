@@ -1,0 +1,9 @@
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\bin\Debug\Week2Lab-CSharp.exe.config
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab_CSharp.frmFVForm.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab_CSharp.Properties.Resources.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab-CSharp.csproj.GenerateResource.Cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\bin\Debug\Week2Lab-CSharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\bin\Debug\Week2Lab-CSharp.pdb
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab-CSharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week2Lab-CSharp\Week2Lab-CSharp\obj\Debug\Week2Lab-CSharp.pdb
