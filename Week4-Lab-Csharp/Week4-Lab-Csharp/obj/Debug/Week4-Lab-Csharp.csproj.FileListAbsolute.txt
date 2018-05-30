@@ -1,0 +1,10 @@
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\bin\Debug\Week4-Lab-Csharp.exe.config
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\bin\Debug\Week4-Lab-Csharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\bin\Debug\Week4-Lab-Csharp.pdb
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4-Lab-Csharp.csprojResolveAssemblyReference.cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4_Lab_Csharp.Presentation.FrmAddItem.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4_Lab_Csharp.FrmInvntMain.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4_Lab_Csharp.Properties.Resources.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4-Lab-Csharp.csproj.GenerateResource.Cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4-Lab-Csharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week4-Lab-Csharp\Week4-Lab-Csharp\obj\Debug\Week4-Lab-Csharp.pdb
