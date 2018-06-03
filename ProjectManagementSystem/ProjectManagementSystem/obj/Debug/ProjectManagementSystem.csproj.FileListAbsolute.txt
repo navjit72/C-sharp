@@ -1,0 +1,13 @@
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.exe.config
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.exe
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.pdb
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.csprojResolveAssemblyReference.cache
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Properties.Resources.resources
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.csproj.GenerateResource.Cache
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.exe
+c:\users\navjit\documents\visual studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.pdb
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAdminDashboard.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.FrmLogin.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddEmployee.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.ManagerDashboard.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddProject.resources
