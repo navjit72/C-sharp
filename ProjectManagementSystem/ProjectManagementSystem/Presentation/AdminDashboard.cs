@@ -43,5 +43,59 @@ namespace ProjectManagementSystem.Presentation
             FrmAddProject addProject = new FrmAddProject();
             addProject.ShowDialog();
         }
+
+        private void updateManagerMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Manager","update");
+            inputId.ShowDialog();
+        }
+
+        private void updateReporteeMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Reportee","update");
+            inputId.ShowDialog();
+        }
+
+        private void updateProjectMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Project","update");
+            inputId.ShowDialog();
+        }
+
+        private void deleteManagerMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Manager","delete");
+            inputId.ShowDialog();
+        }
+
+        private void deleteReporteeMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Reportee","delete");
+            inputId.ShowDialog();
+        }
+
+        private void deleteProjectMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Project","delete");
+            inputId.ShowDialog();
+        }
+
+        private void searchManagerMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Manager", "search");
+            inputId.ShowDialog();
+        }
+
+        private void searchReporteeMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Reportee", "search");
+            inputId.ShowDialog();
+        }
+
+        private void searchProjectMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInputId inputId = new FrmInputId("Project", "search");
+            inputId.ShowDialog();
+        }
     }
 }

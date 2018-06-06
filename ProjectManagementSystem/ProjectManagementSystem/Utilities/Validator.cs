@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjectManagementSystem.Business;
+using ProjectManagementSystem.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -95,6 +97,40 @@ namespace ProjectManagementSystem.Utilities
                 return "Admin";
             else
                 throw new CustomMadeException(Id + " is an invalid Id");
+        }
+        public static object IsValidInputId(string text,string Id)
+        {
+            if(text.Equals("Manager"))
+            {
+                foreach(Manager manager in ManagerDB.GetData())
+                {
+                    if (manager.EmpID.Equals(Id))
+                        return manager;
+                    else
+                        throw new CustomMadeException("No manager with " + Id + " ID exists.");
+                }
+            }
+            else if (text.Equals("Reportee"))
+            {
+                foreach (Reportee reportee in ReporteeDB.GetData())
+                {
+                    if (reportee.EmpID.Equals(Id))
+                        return reportee;
+                    else
+                        throw new CustomMadeException("No reportee with " + Id + " ID exists.");
+                }
+            }
+            else
+            {
+                foreach (Project project in ProjectDB.GetData())
+                {
+                    if (project.ProjectID.Equals(Id))
+                        return project;
+                    else
+                        throw new CustomMadeException("No project with " + Id + " ID exists.");
+                }
+            }
+            return null;
         }
     }
 }

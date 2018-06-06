@@ -14,7 +14,7 @@ namespace ProjectManagementSystem.Business
         public string LastName { get; set; }
         public char Gender { get; set; }
         public string Email { get; set; }
-        public long ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string Password { get; set; }
         public List<Project> ProjectList { get; set; }
         private static int idCount=100;

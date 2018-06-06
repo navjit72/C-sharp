@@ -80,21 +80,21 @@
             // addManagerMenuItem
             // 
             this.addManagerMenuItem.Name = "addManagerMenuItem";
-            this.addManagerMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addManagerMenuItem.Size = new System.Drawing.Size(121, 22);
             this.addManagerMenuItem.Text = "Manager";
             this.addManagerMenuItem.Click += new System.EventHandler(this.addManagerMenuItem_Click);
             // 
             // addReporteeMenuItem
             // 
             this.addReporteeMenuItem.Name = "addReporteeMenuItem";
-            this.addReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
             this.addReporteeMenuItem.Text = "Reportee";
             this.addReporteeMenuItem.Click += new System.EventHandler(this.addReporteeMenuItem_Click);
             // 
             // addProjectMenuItem
             // 
             this.addProjectMenuItem.Name = "addProjectMenuItem";
-            this.addProjectMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addProjectMenuItem.Size = new System.Drawing.Size(121, 22);
             this.addProjectMenuItem.Text = "Project";
             this.addProjectMenuItem.Click += new System.EventHandler(this.addProjectMenuItem_Click);
             // 
@@ -111,20 +111,23 @@
             // updateManagerMenuItem
             // 
             this.updateManagerMenuItem.Name = "updateManagerMenuItem";
-            this.updateManagerMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateManagerMenuItem.Size = new System.Drawing.Size(121, 22);
             this.updateManagerMenuItem.Text = "Manager";
+            this.updateManagerMenuItem.Click += new System.EventHandler(this.updateManagerMenuItem_Click);
             // 
             // updateReporteeMenuItem
             // 
             this.updateReporteeMenuItem.Name = "updateReporteeMenuItem";
-            this.updateReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
             this.updateReporteeMenuItem.Text = "Reportee";
+            this.updateReporteeMenuItem.Click += new System.EventHandler(this.updateReporteeMenuItem_Click);
             // 
             // updateProjectMenuItem
             // 
             this.updateProjectMenuItem.Name = "updateProjectMenuItem";
-            this.updateProjectMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateProjectMenuItem.Size = new System.Drawing.Size(121, 22);
             this.updateProjectMenuItem.Text = "Project";
+            this.updateProjectMenuItem.Click += new System.EventHandler(this.updateProjectMenuItem_Click);
             // 
             // deleteMenuItem
             // 
@@ -139,20 +142,23 @@
             // deleteManagerMenuItem
             // 
             this.deleteManagerMenuItem.Name = "deleteManagerMenuItem";
-            this.deleteManagerMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteManagerMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteManagerMenuItem.Text = "Manager";
+            this.deleteManagerMenuItem.Click += new System.EventHandler(this.deleteManagerMenuItem_Click);
             // 
             // deleteReporteeMenuItem
             // 
             this.deleteReporteeMenuItem.Name = "deleteReporteeMenuItem";
-            this.deleteReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteReporteeMenuItem.Text = "Reportee";
+            this.deleteReporteeMenuItem.Click += new System.EventHandler(this.deleteReporteeMenuItem_Click);
             // 
             // deleteProjectMenuItem
             // 
             this.deleteProjectMenuItem.Name = "deleteProjectMenuItem";
-            this.deleteProjectMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteProjectMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteProjectMenuItem.Text = "Project";
+            this.deleteProjectMenuItem.Click += new System.EventHandler(this.deleteProjectMenuItem_Click);
             // 
             // searchMenuItem
             // 
@@ -167,20 +173,23 @@
             // searchManagerMenuItem
             // 
             this.searchManagerMenuItem.Name = "searchManagerMenuItem";
-            this.searchManagerMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchManagerMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchManagerMenuItem.Text = "Manager";
+            this.searchManagerMenuItem.Click += new System.EventHandler(this.searchManagerMenuItem_Click);
             // 
             // searchReporteeMenuItem
             // 
             this.searchReporteeMenuItem.Name = "searchReporteeMenuItem";
-            this.searchReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchReporteeMenuItem.Text = "Reportee";
+            this.searchReporteeMenuItem.Click += new System.EventHandler(this.searchReporteeMenuItem_Click);
             // 
             // searchProjectMenuItem
             // 
             this.searchProjectMenuItem.Name = "searchProjectMenuItem";
-            this.searchProjectMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchProjectMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchProjectMenuItem.Text = "Project";
+            this.searchProjectMenuItem.Click += new System.EventHandler(this.searchProjectMenuItem_Click);
             // 
             // changePasswordMenuItem
             // 

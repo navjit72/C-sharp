@@ -11,3 +11,8 @@ C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\Pr
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddEmployee.resources
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.ManagerDashboard.resources
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddProject.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmUpdateEmployee.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmInputId.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmUpdateProject.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchEmployee.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchProject.resources

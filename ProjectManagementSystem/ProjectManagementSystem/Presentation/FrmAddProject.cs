@@ -24,7 +24,7 @@ namespace ProjectManagementSystem.Presentation
 
         private void FrmAddProject_Load(object sender, EventArgs e)
         {
-            txtId.Text = Convert.ToString(project.ProjectID);
+            txtId.Text = project.ProjectID;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -43,8 +43,8 @@ namespace ProjectManagementSystem.Presentation
                 ProjectStatus.SelectedIndex = 0;
                 project.ProjectStatus = ProjectStatus.Text;
             }
-            MessageBox.Show(project.ProjectStatus);
             projectList.Add(project);
+            ProjectDB.SaveData(projectList);
             MessageBox.Show("Project with Id " + txtId.Text + " Added Successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -62,8 +62,6 @@ namespace ProjectManagementSystem.Presentation
             {
                 MessageBox.Show(ex.Message, "Entry Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-}
-
-        
+        }      
     }
 }

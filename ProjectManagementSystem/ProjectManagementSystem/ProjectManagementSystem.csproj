@@ -72,6 +72,36 @@
     <Compile Include="Presentation\FrmAddProject.Designer.cs">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\FrmInputId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmInputId.Designer.cs">
+      <DependentUpon>FrmInputId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\FrmSearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmSearchEmployee.Designer.cs">
+      <DependentUpon>FrmSearchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\FrmSearchProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmSearchProject.Designer.cs">
+      <DependentUpon>FrmSearchProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\FrmUpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmUpdateEmployee.Designer.cs">
+      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\FrmUpdateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmUpdateProject.Designer.cs">
+      <DependentUpon>FrmUpdateProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +132,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\FrmAddProject.resx">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmInputId.resx">
+      <DependentUpon>FrmInputId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmSearchEmployee.resx">
+      <DependentUpon>FrmSearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmSearchProject.resx">
+      <DependentUpon>FrmSearchProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmUpdateEmployee.resx">
+      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmUpdateProject.resx">
+      <DependentUpon>FrmUpdateProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -11,7 +11,7 @@ namespace ProjectManagementSystem.Data
     {
         private static List<Admin> AdminList = new List<Admin>()
         {
-            new Admin("Navjit","Kaur",'F',"kaur.navjit72@gmailcom",2345566654,"navjit")
+            new Admin("Navjit","Kaur",'F',"kaur.navjit72@gmailcom","2345566654","navjit")
         };
 
         public static List<Admin> GetData()

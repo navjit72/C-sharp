@@ -70,9 +70,11 @@ namespace ProjectManagementSystem.Presentation
             manager.FirstName = txtFname.Text;
             manager.LastName = txtLname.Text;
             manager.Email = txtEmail.Text;
+            manager.ContactNumber = MtxtPhone.Text;
             manager.Gender = Convert.ToChar(radio.Text);
             manager.Password = txtPassword.Text;
             managerList.Add(manager);
+            ManagerDB.SaveData(managerList);
             MessageBox.Show("Manager with Id " + txtId.Text + " Added Successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -82,9 +84,11 @@ namespace ProjectManagementSystem.Presentation
             reportee.FirstName = txtFname.Text;
             reportee.LastName = txtLname.Text;
             reportee.Email = txtEmail.Text;
+            reportee.ContactNumber = MtxtPhone.Text;
             reportee.Gender = Convert.ToChar(radio.Text);
             reportee.Password = txtPassword.Text;
             reporteeList.Add(reportee);
+            ReporteeDB.SaveData(reporteeList);
             MessageBox.Show("Reportee with Id " + txtId.Text + " Added Successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

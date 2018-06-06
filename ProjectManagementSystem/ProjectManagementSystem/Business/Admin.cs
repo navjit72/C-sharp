@@ -13,11 +13,11 @@ namespace ProjectManagementSystem.Business
         public string LastName { get; set; }
         public char Gender { get; set; }
         public string Email { get; set; }
-        public long ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string Password { get; set; }
         private static int idCount = 100;
 
-        public Admin(string fname,string lname,char gender,string email, long phone,string pass)
+        public Admin(string fname,string lname,char gender,string email, string phone,string pass)
         {
             idCount += 1;
             EmpID = "A" + idCount;

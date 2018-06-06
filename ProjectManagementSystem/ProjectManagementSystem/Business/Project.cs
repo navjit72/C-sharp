@@ -8,7 +8,7 @@ namespace ProjectManagementSystem.Business
 {
     public class Project
     {
-        public int ProjectID { get; }
+        public string ProjectID { get; }
         public string ProjectName { get; set; }
         public string ProjectStatus { get; set; }
         public int Progress { get; set; }
@@ -17,7 +17,7 @@ namespace ProjectManagementSystem.Business
         public Project()
         {
             idCount += 1;
-            ProjectID = idCount;
+            ProjectID = ""+idCount;
             Progress = 0;
         }
     }
