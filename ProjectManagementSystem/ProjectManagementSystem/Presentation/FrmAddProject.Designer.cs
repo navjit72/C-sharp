@@ -41,7 +41,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(279, 37);
+            this.txtId.Location = new System.Drawing.Point(256, 37);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(114, 23);
@@ -52,7 +52,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 40);
+            this.label1.Location = new System.Drawing.Point(108, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 7;
@@ -62,10 +62,10 @@
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(279, 191);
+            this.btnCancel.Location = new System.Drawing.Point(256, 191);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 32);
-            this.btnCancel.TabIndex = 16;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -73,10 +73,10 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(60, 191);
+            this.btnAdd.Location = new System.Drawing.Point(70, 191);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(107, 32);
-            this.btnAdd.TabIndex = 15;
+            this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -84,17 +84,17 @@
             // txtProjectname
             // 
             this.txtProjectname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectname.Location = new System.Drawing.Point(279, 86);
+            this.txtProjectname.Location = new System.Drawing.Point(256, 86);
             this.txtProjectname.Name = "txtProjectname";
             this.txtProjectname.Size = new System.Drawing.Size(114, 23);
-            this.txtProjectname.TabIndex = 18;
+            this.txtProjectname.TabIndex = 1;
             this.txtProjectname.Tag = "Project Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(57, 89);
+            this.label2.Location = new System.Drawing.Point(84, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 17;
@@ -104,7 +104,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 136);
+            this.label3.Location = new System.Drawing.Point(81, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 17);
             this.label3.TabIndex = 19;
@@ -117,10 +117,10 @@
             this.ProjectStatus.Items.AddRange(new object[] {
             "Ongoing",
             "Finished"});
-            this.ProjectStatus.Location = new System.Drawing.Point(279, 133);
+            this.ProjectStatus.Location = new System.Drawing.Point(256, 133);
             this.ProjectStatus.Name = "ProjectStatus";
             this.ProjectStatus.Size = new System.Drawing.Size(114, 24);
-            this.ProjectStatus.TabIndex = 20;
+            this.ProjectStatus.TabIndex = 2;
             this.ProjectStatus.Tag = "Project Status";
             // 
             // FrmAddProject

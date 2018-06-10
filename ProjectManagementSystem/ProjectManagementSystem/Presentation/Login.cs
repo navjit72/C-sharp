@@ -32,58 +32,55 @@ namespace ProjectManagementSystem
                         char c = txtUsername.Text.First();
                         if (c == 'A')
                         {
-                            foreach (Admin admin in AdminDB.GetData())
-                            {
-                                if (admin.EmpID.Equals(txtUsername.Text))
-                                    if (admin.Password.Equals(txtPassword.Text))
-                                    {
-                                        MessageBox.Show("Login Successfull!!", "Success Message");
-                                        this.Hide();
-                                        FrmAdminDashboard adminForm = new FrmAdminDashboard(admin);
-                                        adminForm.Show();
-                                    }
-                                    else
-                                        throw new CustomMadeException("Wrong Password!!");
+                            Admin admin = (Admin)Validator.IsValidInputId("Admin", txtUsername.Text);
+                            if (admin != null)
+                                if (admin.Password.Equals(txtPassword.Text))
+                                {
+                                    MessageBox.Show("Login Successfull!!", "Success Message");
+                                    this.Hide();
+                                    FrmAdminDashboard adminForm = new FrmAdminDashboard(admin);
+                                    adminForm.Show();
+                                }
                                 else
-                                    throw new CustomMadeException("Wrong Employee Id!!");
-                            }
+                                    throw new CustomMadeException("Wrong Password!!");
+                            else
+                                throw new CustomMadeException("No admin with id " + txtUsername.Text + " exists");
                         }
                         else if (c == 'M')
                         {
-                            foreach (Manager manager in ManagerDB.GetData())
-                            {
-                                if (manager.EmpID.Equals(txtUsername.Text))
-                                    if (manager.Password.Equals(txtPassword.Text))
-                                    {
-                                        MessageBox.Show("Login Successfull!!", "Success Message");
-                                        this.Hide();
-                                        ManagerDashboard managerForm = new ManagerDashboard();
-                                        managerForm.Show();
-                                    }
-                                    else
-                                        throw new CustomMadeException("Wrong Password!!");
+                            Manager manager = (Manager)Validator.IsValidInputId("Manager", txtUsername.Text);
+                            if (manager != null)
+                                if (manager.Password.Equals(txtPassword.Text))
+                                {
+                                    MessageBox.Show("Login Successfull!!", "Success Message");
+                                    this.Hide();
+                                    ManagerDashboard managerForm = new ManagerDashboard();
+                                    managerForm.Show();
+                                }
                                 else
-                                    throw new CustomMadeException("Wrong Employee Id!!");
-                            }
+                                    throw new CustomMadeException("Wrong Password!!");
+                            else
+                                throw new CustomMadeException("No manager with id " + txtUsername.Text + " exists");
                         }
                         else if (c == 'R')
                         {
-                            foreach (Reportee reportee in ReporteeDB.GetData())
-                            {
-                                if (reportee.EmpID.Equals(txtUsername.Text))
-                                    if (reportee.Password.Equals(txtPassword.Text))
-                                    {
-                                        MessageBox.Show("Login Successfull!!", "Success Message");
-                                        this.Hide();
-                                        ReporteeDashboard reporteeForm = new ReporteeDashboard();
-                                        reporteeForm.Show();
-                                    }
-                                    else
-                                        throw new CustomMadeException("Wrong Password!!");
+                            Reportee reportee = (Reportee)Validator.IsValidInputId("Reportee", txtUsername.Text);
+                            if (reportee != null)
+                                if (reportee.Password.Equals(txtPassword.Text))
+                                {
+                                    MessageBox.Show("Login Successfull!!", "Success Message");
+                                    this.Hide();
+                                    ReporteeDashboard reporteeForm = new ReporteeDashboard();
+                                    reporteeForm.Show();
+                                }
                                 else
-                                    throw new CustomMadeException("Wrong Employee Id!!");
-                            }
+                                    throw new CustomMadeException("Wrong Password!!");
+                            else
+                                throw new CustomMadeException("No reportee with id " + txtUsername.Text + " exists");
                         }
+                        else
+                            throw new CustomMadeException("Invalid Id!!");
+
                     }
             }
             catch(Exception ex)

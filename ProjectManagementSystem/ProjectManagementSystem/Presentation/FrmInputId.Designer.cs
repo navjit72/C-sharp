@@ -50,10 +50,11 @@
             // 
             this.lblParameter.AutoSize = true;
             this.lblParameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParameter.Location = new System.Drawing.Point(75, 79);
+            this.lblParameter.Location = new System.Drawing.Point(71, 38);
             this.lblParameter.Name = "lblParameter";
-            this.lblParameter.Size = new System.Drawing.Size(0, 17);
+            this.lblParameter.Size = new System.Drawing.Size(14, 17);
             this.lblParameter.TabIndex = 1;
+            this.lblParameter.Text = "x";
             // 
             // label2
             // 
@@ -71,7 +72,7 @@
             this.txtId.Location = new System.Drawing.Point(180, 35);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 23);
-            this.txtId.TabIndex = 3;
+            this.txtId.TabIndex = 1;
             this.txtId.Tag = "ID";
             // 
             // btnOK
@@ -79,25 +80,28 @@
             this.btnOK.Location = new System.Drawing.Point(78, 99);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 4;
-            this.btnOK.Text = "Ok";
+            this.btnOK.TabIndex = 2;
+            this.btnOK.Text = "&Ok";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(180, 99);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // FrmInputId
             // 
+            this.AcceptButton = this.btnOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(339, 160);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);

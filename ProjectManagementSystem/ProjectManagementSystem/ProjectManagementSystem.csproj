@@ -72,6 +72,12 @@
     <Compile Include="Presentation\FrmAddProject.Designer.cs">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\FrmInputId.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <EmbeddedResource Include="Presentation\FrmAddProject.resx">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\FrmInputId.resx">
       <DependentUpon>FrmInputId.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +172,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

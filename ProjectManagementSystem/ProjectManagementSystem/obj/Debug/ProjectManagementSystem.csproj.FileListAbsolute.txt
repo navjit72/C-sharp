@@ -16,3 +16,22 @@ C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\Pr
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmUpdateProject.resources
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchEmployee.resources
 C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchProject.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.exe.config
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.exe
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.pdb
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.exe
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.pdb
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAdminDashboard.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddEmployee.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddProject.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmInputId.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchEmployee.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmSearchProject.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmUpdateEmployee.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmUpdateProject.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.FrmLogin.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.ManagerDashboard.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Properties.Resources.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.csproj.GenerateResource.Cache
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmChangePassword.resources

@@ -20,12 +20,15 @@ namespace ProjectManagementSystem.Presentation
         Project project;
         string parameter;
         string operation;
+        FrmAdminDashboard admin;
 
-        public FrmInputId(string text,string op)
+        public FrmInputId(string text,string op,Admin adminObj)
         {
             parameter = text;
             operation = op;
+            admin = new FrmAdminDashboard(adminObj);
             InitializeComponent();
+            lblParameter.Text = parameter;
         }
 
         private void Delete(Object obj)
@@ -54,6 +57,47 @@ namespace ProjectManagementSystem.Presentation
             }
         }
 
+        private void Update(Object obj)
+        {
+            if (parameter.Equals("Manager") || parameter.Equals("Reportee"))
+            {
+                this.Close();
+                FrmUpdateEmployee updateEmp = new FrmUpdateEmployee(parameter, obj);
+                updateEmp.MdiParent = admin;
+                updateEmp.Show();
+            }
+            else
+            {
+                project = (Project)obj;
+                this.Close();
+                FrmUpdateProject updateProject = new FrmUpdateProject(project);
+                updateProject.MdiParent = admin;
+                updateProject.Show();
+            }
+        }
+
+        private void Search(Object obj)
+        {
+            if (parameter.Equals("Manager") || parameter.Equals("Reportee"))
+            {
+
+                this.Close();
+                FrmSearchEmployee searchEmp = new FrmSearchEmployee(parameter, obj);
+                searchEmp.MdiParent = admin;
+                searchEmp.Show();
+            }
+
+            else
+            {
+                project = (Project)obj;
+                this.Close();
+                FrmSearchProject searchProject = new FrmSearchProject(project);
+                searchProject.ShowDialog();
+                searchProject.MdiParent = admin;
+                searchProject.Show();
+            }
+    }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -68,43 +112,21 @@ namespace ProjectManagementSystem.Presentation
                 {
                     if (operation.Equals("update"))
                     {
-                        if (parameter.Equals("Manager") || parameter.Equals("Reportee"))
-                        {
-                            this.Close();
-                            FrmUpdateEmployee updateEmp = new FrmUpdateEmployee(parameter, obj);
-                            updateEmp.ShowDialog();
-                        }
-                        else
-                        {
-                            project = (Project)obj;
-                            this.Close();
-                            FrmUpdateProject updateProject = new FrmUpdateProject(project);
-                            updateProject.ShowDialog();
-                        }
+                        Update(obj);
                     }
-                    else if(operation.Equals("delete"))
+                    else if (operation.Equals("delete"))
                     {
                         Delete(obj);
                         MessageBox.Show(parameter + " is deleted successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
-                    else if(operation.Equals("search"))
+                    else if (operation.Equals("search"))
                     {
-                        if(parameter.Equals("Manager") || parameter.Equals("Reportee"))
-                        {
-                            this.Close();
-                            FrmSearchEmployee searchEmp = new FrmSearchEmployee(parameter, obj);
-                            searchEmp.ShowDialog();
-                        }
-                        else
-                        {
-                            project = (Project)obj;
-                            this.Close();
-                            FrmSearchProject searchProject = new FrmSearchProject(project);
-                            searchProject.ShowDialog();
-                        }
+                        Search(obj);
                     }
                 }
+                else
+                    throw new CustomMadeException("No " + parameter + " with the id " + txtId.Text + " exists");
             }
             catch(Exception ex)
             {

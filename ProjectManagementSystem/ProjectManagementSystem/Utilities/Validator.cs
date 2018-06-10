@@ -60,12 +60,12 @@ namespace ProjectManagementSystem.Utilities
                 throw new CustomMadeException(textbox.Tag + " is not in valid Format ex-someone@example.com");
             }
         }
-        public static bool IsValidId(TextBox textbox)
-        {
-            if (textbox.Text.First() == 'M' || textbox.Text.First() == 'R' || textbox.Text.First() == 'A')
-                return true;
-            return false;
-        }
+        //public static bool IsValidId(TextBox textbox)
+        //{
+        //    if (textbox.Text.First() == 'M' || textbox.Text.First() == 'R' || textbox.Text.First() == 'A')
+        //        return true;
+        //    return false;
+        //}
         public static bool IsValidName(TextBox textbox)
         {
             bool flag = false;
@@ -86,28 +86,34 @@ namespace ProjectManagementSystem.Utilities
             }
             return false;
         }
-        public static string GetDesignation(string Id)
-        {
-            char c = Id.First();
-            if (c == 'M')
-                return "Manager";
-            else if (c == 'R')
-                return "Reportee";
-            else if (c == 'A')
-                return "Admin";
-            else
-                throw new CustomMadeException(Id + " is an invalid Id");
-        }
+        //public static string GetDesignation(string Id)
+        //{
+        //    char c = Id.First();
+        //    if (c == 'M')
+        //        return "Manager";
+        //    else if (c == 'R')
+        //        return "Reportee";
+        //    else if (c == 'A')
+        //        return "Admin";
+        //    else
+        //        throw new CustomMadeException(Id + " is an invalid Id");
+        //}
         public static object IsValidInputId(string text,string Id)
         {
-            if(text.Equals("Manager"))
+            if(text.Equals("Admin"))
+            {
+                foreach (Admin admin in AdminDB.GetData())
+                {
+                    if (admin.EmpID.Equals(Id))
+                        return admin;
+                }
+            }
+            else if(text.Equals("Manager"))
             {
                 foreach(Manager manager in ManagerDB.GetData())
                 {
                     if (manager.EmpID.Equals(Id))
                         return manager;
-                    else
-                        throw new CustomMadeException("No manager with " + Id + " ID exists.");
                 }
             }
             else if (text.Equals("Reportee"))
@@ -116,8 +122,6 @@ namespace ProjectManagementSystem.Utilities
                 {
                     if (reportee.EmpID.Equals(Id))
                         return reportee;
-                    else
-                        throw new CustomMadeException("No reportee with " + Id + " ID exists.");
                 }
             }
             else
@@ -126,8 +130,6 @@ namespace ProjectManagementSystem.Utilities
                 {
                     if (project.ProjectID.Equals(Id))
                         return project;
-                    else
-                        throw new CustomMadeException("No project with " + Id + " ID exists.");
                 }
             }
             return null;

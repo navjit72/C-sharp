@@ -49,7 +49,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(67, 156);
-            this.txtPassword.MaxLength = 6;
+            this.txtPassword.MaxLength = 10;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(261, 20);
             this.txtPassword.TabIndex = 2;
@@ -90,7 +90,7 @@
             this.btnExit.Location = new System.Drawing.Point(206, 209);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(122, 28);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "E&XIT";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
