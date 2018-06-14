@@ -18,29 +18,26 @@ namespace ProjectManagementSystem.Presentation
         Manager manager;
         Reportee reportee;
         Project project;
-        string parameter;
-        string operation;
+        Type t;
         FrmAdminDashboard admin;
 
-        public FrmInputId(string text,string op,Admin adminObj)
+        public FrmInputId(Type x,Admin adminObj)
         {
-            parameter = text;
-            operation = op;
             admin = new FrmAdminDashboard(adminObj);
+            t = x;
             InitializeComponent();
-            lblParameter.Text = parameter;
         }
 
         private void Delete(Object obj)
         {
-            if(parameter.Equals("Manager"))
+            if(obj.GetType()==typeof(Manager))
             {
                 manager = (Manager)obj;
                 List<Manager> managerList = ManagerDB.GetData();
                 managerList.Remove(manager);
                 ManagerDB.SaveData(managerList);
             }
-            else if (parameter.Equals("Reportee"))
+            else if (obj.GetType()==typeof(Reportee))
             {
                 reportee = (Reportee)obj;
                 List<Reportee> reporteeList = ReporteeDB.GetData();
@@ -48,7 +45,7 @@ namespace ProjectManagementSystem.Presentation
                 ReporteeDB.SaveData(reporteeList);
                 
             }
-            else if (parameter.Equals("Project"))
+            else if (obj.GetType()==typeof(Project))
             {
                 project = (Project)obj;
                 List<Project> projectList = ProjectDB.GetData();
@@ -56,47 +53,6 @@ namespace ProjectManagementSystem.Presentation
                 ProjectDB.SaveData(projectList);
             }
         }
-
-        private void Update(Object obj)
-        {
-            if (parameter.Equals("Manager") || parameter.Equals("Reportee"))
-            {
-                this.Close();
-                FrmUpdateEmployee updateEmp = new FrmUpdateEmployee(parameter, obj);
-                updateEmp.MdiParent = admin;
-                updateEmp.Show();
-            }
-            else
-            {
-                project = (Project)obj;
-                this.Close();
-                FrmUpdateProject updateProject = new FrmUpdateProject(project);
-                updateProject.MdiParent = admin;
-                updateProject.Show();
-            }
-        }
-
-        private void Search(Object obj)
-        {
-            if (parameter.Equals("Manager") || parameter.Equals("Reportee"))
-            {
-
-                this.Close();
-                FrmSearchEmployee searchEmp = new FrmSearchEmployee(parameter, obj);
-                searchEmp.MdiParent = admin;
-                searchEmp.Show();
-            }
-
-            else
-            {
-                project = (Project)obj;
-                this.Close();
-                FrmSearchProject searchProject = new FrmSearchProject(project);
-                searchProject.ShowDialog();
-                searchProject.MdiParent = admin;
-                searchProject.Show();
-            }
-    }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -107,26 +63,15 @@ namespace ProjectManagementSystem.Presentation
         {
             try
             {
-                Object obj = Validator.IsValidInputId(parameter, txtId.Text);
+                Object obj = Validator.IsValidInputId(t, txtId.Text);
                 if (obj != null)
                 {
-                    if (operation.Equals("update"))
-                    {
-                        Update(obj);
-                    }
-                    else if (operation.Equals("delete"))
-                    {
                         Delete(obj);
-                        MessageBox.Show(parameter + " is deleted successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(t.Name + " is deleted successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
-                    }
-                    else if (operation.Equals("search"))
-                    {
-                        Search(obj);
-                    }
                 }
                 else
-                    throw new CustomMadeException("No " + parameter + " with the id " + txtId.Text + " exists");
+                    throw new CustomMadeException("No " + t.Name + " with the id " + txtId.Text + " exists");
             }
             catch(Exception ex)
             {

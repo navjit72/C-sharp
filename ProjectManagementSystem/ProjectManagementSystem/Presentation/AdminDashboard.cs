@@ -1,4 +1,5 @@
 ﻿using ProjectManagementSystem.Business;
+using ProjectManagementSystem.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace ProjectManagementSystem.Presentation
     public partial class FrmAdminDashboard : Form
     {
         Admin admin;
+
         public FrmAdminDashboard(Admin adminObj)
         {
             admin = adminObj;
@@ -54,71 +56,78 @@ namespace ProjectManagementSystem.Presentation
 
         private void updateManagerMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Manager","update",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmEmployee updateMan = new FrmEmployee(typeof(Manager),"Update");
+            updateMan.MdiParent = this;
+            updateMan.Dock = DockStyle.Fill;
+            updateMan.Show();
         }
 
         private void updateReporteeMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Reportee","update",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmEmployee updateRep = new FrmEmployee(typeof(Reportee),"Update");
+            updateRep.MdiParent = this;
+            updateRep.Dock = DockStyle.Fill;
+            updateRep.Show();
         }
 
         private void updateProjectMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Project","update",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmProject updateProj = new FrmProject("Update");
+            updateProj.MdiParent = this;
+            updateProj.Dock = DockStyle.Fill;
+            updateProj.Show();
         }
 
         private void deleteManagerMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Manager","delete",admin);
+            FrmInputId inputId = new FrmInputId(typeof(Admin),admin);
             inputId.MdiParent = this;
             inputId.Show();
         }
 
         private void deleteReporteeMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Reportee","delete",admin);
+            FrmInputId inputId = new FrmInputId(typeof(Reportee),admin);
             inputId.MdiParent = this;
             inputId.Show();
         }
 
         private void deleteProjectMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Project","delete",admin);
+            FrmInputId inputId = new FrmInputId(typeof(Project),admin);
             inputId.MdiParent = this;
             inputId.Show();
         }
 
         private void searchManagerMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Manager", "search",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmEmployee searchMan = new FrmEmployee(typeof(Manager), "Search");
+            searchMan.MdiParent = this;
+            searchMan.Dock = DockStyle.Fill;
+            searchMan.Show();
         }
 
         private void searchReporteeMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Reportee", "search",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmEmployee searchRep = new FrmEmployee(typeof(Reportee), "Search");
+            searchRep.MdiParent = this;
+            searchRep.Dock = DockStyle.Fill;
+            searchRep.Show();
         }
 
         private void searchProjectMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId("Project", "search",admin);
-            inputId.MdiParent = this;
-            inputId.Show();
+            FrmProject project = new FrmProject("Search");
+            project.MdiParent = this;
+            project.Dock = DockStyle.Fill;
+            project.Show();
         }
 
         private void changePasswordMenuItem_Click(object sender, EventArgs e)
         {
-            FrmChangePassword changePass = new FrmChangePassword(admin);
+            FrmChangePassword changePass = new FrmChangePassword(typeof(Admin),admin);
             changePass.MdiParent = this;
+            changePass.Dock = DockStyle.Fill;
             changePass.Show();
         }
     }

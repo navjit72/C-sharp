@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ProjectStatus = new System.Windows.Forms.ComboBox();
+            this.txtProjectManager = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtId
@@ -62,7 +64,7 @@
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(256, 191);
+            this.btnCancel.Location = new System.Drawing.Point(256, 230);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 32);
             this.btnCancel.TabIndex = 4;
@@ -73,7 +75,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(70, 191);
+            this.btnAdd.Location = new System.Drawing.Point(70, 230);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(107, 32);
             this.btnAdd.TabIndex = 3;
@@ -123,13 +125,34 @@
             this.ProjectStatus.TabIndex = 2;
             this.ProjectStatus.Tag = "Project Status";
             // 
+            // txtProjectManager
+            // 
+            this.txtProjectManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectManager.Location = new System.Drawing.Point(256, 180);
+            this.txtProjectManager.Name = "txtProjectManager";
+            this.txtProjectManager.Size = new System.Drawing.Size(114, 23);
+            this.txtProjectManager.TabIndex = 20;
+            this.txtProjectManager.Tag = "Project Manager";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(84, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 17);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Project Manager";
+            // 
             // FrmAddProject
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(438, 259);
+            this.ClientSize = new System.Drawing.Size(438, 295);
+            this.Controls.Add(this.txtProjectManager);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.ProjectStatus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtProjectname);
@@ -157,5 +180,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ProjectStatus;
+        private System.Windows.Forms.TextBox txtProjectManager;
+        private System.Windows.Forms.Label label4;
     }
 }

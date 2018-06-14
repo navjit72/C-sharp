@@ -32,7 +32,7 @@ namespace ProjectManagementSystem
                         char c = txtUsername.Text.First();
                         if (c == 'A')
                         {
-                            Admin admin = (Admin)Validator.IsValidInputId("Admin", txtUsername.Text);
+                            Admin admin = (Admin)Validator.IsValidInputId(typeof(Admin), txtUsername.Text);
                             if (admin != null)
                                 if (admin.Password.Equals(txtPassword.Text))
                                 {
@@ -48,13 +48,13 @@ namespace ProjectManagementSystem
                         }
                         else if (c == 'M')
                         {
-                            Manager manager = (Manager)Validator.IsValidInputId("Manager", txtUsername.Text);
+                            Manager manager = (Manager)Validator.IsValidInputId(typeof(Manager), txtUsername.Text);
                             if (manager != null)
                                 if (manager.Password.Equals(txtPassword.Text))
                                 {
                                     MessageBox.Show("Login Successfull!!", "Success Message");
                                     this.Hide();
-                                    ManagerDashboard managerForm = new ManagerDashboard();
+                                    FrmManagerDashboard managerForm = new FrmManagerDashboard(manager);
                                     managerForm.Show();
                                 }
                                 else
@@ -64,7 +64,7 @@ namespace ProjectManagementSystem
                         }
                         else if (c == 'R')
                         {
-                            Reportee reportee = (Reportee)Validator.IsValidInputId("Reportee", txtUsername.Text);
+                            Reportee reportee = (Reportee)Validator.IsValidInputId(typeof(Reportee), txtUsername.Text);
                             if (reportee != null)
                                 if (reportee.Password.Equals(txtPassword.Text))
                                 {
@@ -103,6 +103,11 @@ namespace ProjectManagementSystem
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtPassword.Clear();
         }
     }
 }

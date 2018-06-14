@@ -6,27 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProjectManagementSystem.Business
 {
-    public class Admin
+    public class Admin : Employee
     {
-        public string EmpID { get;}
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public char Gender { get; set; }
-        public string Email { get; set; }
-        public string ContactNumber { get; set; }
-        public string Password { get; set; }
+        public string EmpID { get; }
         private static int idCount = 100;
 
-        public Admin(string fname,string lname,char gender,string email, string phone,string pass)
+        public Admin(string fname,string lname,char gender,string email,
+            string phone,string pass) :base(fname,lname,gender,email,phone,pass)
         {
             idCount += 1;
             EmpID = "A" + idCount;
-            FirstName = fname;
-            LastName = lname;
-            Gender = gender;
-            Email = email;
-            ContactNumber = phone;
-            Password = pass;
         }
     }
 }

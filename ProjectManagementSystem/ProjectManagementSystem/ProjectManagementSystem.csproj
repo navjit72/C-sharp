@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\Admin.cs" />
+    <Compile Include="Business\Employee.cs" />
     <Compile Include="Business\Manager.cs" />
     <Compile Include="Business\Project.cs" />
     <Compile Include="Business\Reportee.cs" />
@@ -96,17 +97,17 @@
     <Compile Include="Presentation\FrmSearchProject.Designer.cs">
       <DependentUpon>FrmSearchProject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\FrmUpdateEmployee.cs">
+    <Compile Include="Presentation\FrmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\FrmUpdateEmployee.Designer.cs">
-      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    <Compile Include="Presentation\FrmEmployee.Designer.cs">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\FrmUpdateProject.cs">
+    <Compile Include="Presentation\FrmProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\FrmUpdateProject.Designer.cs">
-      <DependentUpon>FrmUpdateProject.cs</DependentUpon>
+    <Compile Include="Presentation\FrmProject.Designer.cs">
+      <DependentUpon>FrmProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\ManagerDashboard.cs">
       <SubType>Form</SubType>
@@ -151,11 +152,11 @@
     <EmbeddedResource Include="Presentation\FrmSearchProject.resx">
       <DependentUpon>FrmSearchProject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\FrmUpdateEmployee.resx">
-      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\FrmEmployee.resx">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\FrmUpdateProject.resx">
-      <DependentUpon>FrmUpdateProject.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\FrmProject.resx">
+      <DependentUpon>FrmProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

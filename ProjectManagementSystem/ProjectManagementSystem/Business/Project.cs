@@ -12,6 +12,8 @@ namespace ProjectManagementSystem.Business
         public string ProjectName { get; set; }
         public string ProjectStatus { get; set; }
         public int Progress { get; set; }
+        public Manager ProjectManager { get; set; }
+        public List<Reportee> ReporteeList { get; set; }
         private static int idCount = 100;
 
         public Project()

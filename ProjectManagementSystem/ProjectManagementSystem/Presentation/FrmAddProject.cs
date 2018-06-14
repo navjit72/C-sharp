@@ -32,10 +32,23 @@ namespace ProjectManagementSystem.Presentation
             this.Close();
         }
 
+        private Manager FindManager()
+        {
+            Manager manager =(Manager)Validator.IsValidInputId(typeof(Manager), txtProjectManager.Text);
+            if (manager != null)
+                return manager;
+            else
+                throw new CustomMadeException("No manager with Id " + txtProjectManager.Text + " found");
+        }
+
         private void AddProject()
         {
             List<Project> projectList = ProjectDB.GetData();
             project.ProjectName = txtProjectname.Text;
+            if (txtProjectManager.Text != "")
+                project.ProjectManager = FindManager();
+            else
+                project.ProjectManager = null;
             if (ProjectStatus.Text != "")
                 project.ProjectStatus = ProjectStatus.Text;
             else

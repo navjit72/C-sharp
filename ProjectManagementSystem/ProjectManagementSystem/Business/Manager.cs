@@ -7,15 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectManagementSystem.Business
 {
-    public class Manager
+    public class Manager : Employee
     {
         public string EmpID { get; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public char Gender { get; set; }
-        public string Email { get; set; }
-        public string ContactNumber { get; set; }
-        public string Password { get; set; }
         public List<Project> ProjectList { get; set; }
         private static int idCount=100;
 

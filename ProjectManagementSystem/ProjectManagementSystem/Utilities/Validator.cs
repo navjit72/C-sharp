@@ -98,9 +98,9 @@ namespace ProjectManagementSystem.Utilities
         //    else
         //        throw new CustomMadeException(Id + " is an invalid Id");
         //}
-        public static object IsValidInputId(string text,string Id)
+        public static object IsValidInputId(Type t,string Id)
         {
-            if(text.Equals("Admin"))
+            if(t == typeof(Admin))
             {
                 foreach (Admin admin in AdminDB.GetData())
                 {
@@ -108,7 +108,7 @@ namespace ProjectManagementSystem.Utilities
                         return admin;
                 }
             }
-            else if(text.Equals("Manager"))
+            else if(t == typeof(Manager))
             {
                 foreach(Manager manager in ManagerDB.GetData())
                 {
@@ -116,7 +116,7 @@ namespace ProjectManagementSystem.Utilities
                         return manager;
                 }
             }
-            else if (text.Equals("Reportee"))
+            else if (t == typeof(Reportee))
             {
                 foreach (Reportee reportee in ReporteeDB.GetData())
                 {

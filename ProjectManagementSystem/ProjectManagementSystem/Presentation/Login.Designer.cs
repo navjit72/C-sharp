@@ -41,10 +41,11 @@
             this.txtUsername.MaxLength = 10;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(261, 20);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 2;
             this.txtUsername.Tag = "Username";
             this.txtUsername.Text = "Enter Username";
             this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtPassword
             // 
@@ -52,7 +53,7 @@
             this.txtPassword.MaxLength = 10;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(261, 20);
-            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TabIndex = 3;
             this.txtPassword.Tag = "Password";
             this.txtPassword.Text = "Enter Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -65,7 +66,7 @@
             this.btnLogin.Location = new System.Drawing.Point(67, 209);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(122, 28);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "&LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -90,7 +91,7 @@
             this.btnExit.Location = new System.Drawing.Point(206, 209);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(122, 28);
-            this.btnExit.TabIndex = 4;
+            this.btnExit.TabIndex = 1;
             this.btnExit.Text = "E&XIT";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
