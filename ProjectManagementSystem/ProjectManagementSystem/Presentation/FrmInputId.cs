@@ -19,11 +19,12 @@ namespace ProjectManagementSystem.Presentation
         Reportee reportee;
         Project project;
         Type t;
-        FrmAdminDashboard admin;
+        List<Manager> managerList;
+        List<Reportee> reporteeList;
+        List<Project> projectList;
 
         public FrmInputId(Type x,Admin adminObj)
         {
-            admin = new FrmAdminDashboard(adminObj);
             t = x;
             InitializeComponent();
         }
@@ -33,24 +34,48 @@ namespace ProjectManagementSystem.Presentation
             if(obj.GetType()==typeof(Manager))
             {
                 manager = (Manager)obj;
-                List<Manager> managerList = ManagerDB.GetData();
-                managerList.Remove(manager);
-                ManagerDB.SaveData(managerList);
+                if (manager.ProjectList.Count == 0)
+                {
+                    managerList = ManagerDB.GetData();
+                    managerList.Remove(manager);
+                    ManagerDB.SaveData(managerList);
+                }
+                else
+                    throw new CustomMadeException("Failed to delete manager " + txtId.Text + " as it has projects.");
             }
             else if (obj.GetType()==typeof(Reportee))
             {
                 reportee = (Reportee)obj;
-                List<Reportee> reporteeList = ReporteeDB.GetData();
-                reporteeList.Remove(reportee);
-                ReporteeDB.SaveData(reporteeList);
-                
+                if (reportee.Project == null)
+                {
+                    reporteeList = ReporteeDB.GetData();
+                    reporteeList.Remove(reportee);
+                    ReporteeDB.SaveData(reporteeList);
+                }
+                else
+                    throw new CustomMadeException("Failed to delete reportee " + txtId.Text + " as it has project assigned.");
+
             }
             else if (obj.GetType()==typeof(Project))
             {
                 project = (Project)obj;
-                List<Project> projectList = ProjectDB.GetData();
+                manager = Validator.FindManagerByProject(project);
+                reporteeList = Validator.FindReporteesByProject(project);
+                projectList = ProjectDB.GetData();
                 projectList.Remove(project);
                 ProjectDB.SaveData(projectList);
+                foreach(Project proj in manager.ProjectList)
+                {
+                    if (proj.ProjectID.Equals(project.ProjectID))
+                    {
+                        manager.ProjectList.Remove(proj);
+                        break;
+                    }
+                }
+                foreach(Reportee rep in reporteeList)
+                {
+                    rep.Project = null;
+                }              
             }
         }
 

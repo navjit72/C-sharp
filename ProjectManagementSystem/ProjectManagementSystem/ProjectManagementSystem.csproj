@@ -73,6 +73,12 @@
     <Compile Include="Presentation\FrmAddProject.Designer.cs">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\FrmAddReporteeToProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmAddReporteeToProject.Designer.cs">
+      <DependentUpon>FrmAddReporteeToProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\FrmChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\FrmAddProject.resx">
       <DependentUpon>FrmAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmAddReporteeToProject.resx">
+      <DependentUpon>FrmAddReporteeToProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\FrmChangePassword.resx">
       <DependentUpon>FrmChangePassword.cs</DependentUpon>

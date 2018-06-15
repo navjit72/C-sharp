@@ -41,6 +41,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.managerName = new System.Windows.Forms.ToolStripLabel();
+            this.assignTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +94,8 @@
             // reporteeMenuItem
             // 
             this.reporteeMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.assignRatingItem});
+            this.assignRatingItem,
+            this.assignTaskToolStripMenuItem});
             this.reporteeMenuItem.Name = "reporteeMenuItem";
             this.reporteeMenuItem.Size = new System.Drawing.Size(66, 20);
             this.reporteeMenuItem.Text = "Reportee";
@@ -101,7 +103,7 @@
             // assignRatingItem
             // 
             this.assignRatingItem.Name = "assignRatingItem";
-            this.assignRatingItem.Size = new System.Drawing.Size(151, 22);
+            this.assignRatingItem.Size = new System.Drawing.Size(152, 22);
             this.assignRatingItem.Text = "Assign Ratings";
             // 
             // demandsMenuItem
@@ -148,6 +150,12 @@
             this.managerName.Name = "managerName";
             this.managerName.Size = new System.Drawing.Size(0, 22);
             // 
+            // assignTaskToolStripMenuItem
+            // 
+            this.assignTaskToolStripMenuItem.Name = "assignTaskToolStripMenuItem";
+            this.assignTaskToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.assignTaskToolStripMenuItem.Text = "Assign Task";
+            // 
             // FrmManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,5 +194,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel managerName;
+        private System.Windows.Forms.ToolStripMenuItem assignTaskToolStripMenuItem;
     }
 }

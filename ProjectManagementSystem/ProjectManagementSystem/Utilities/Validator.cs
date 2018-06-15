@@ -60,12 +60,7 @@ namespace ProjectManagementSystem.Utilities
                 throw new CustomMadeException(textbox.Tag + " is not in valid Format ex-someone@example.com");
             }
         }
-        //public static bool IsValidId(TextBox textbox)
-        //{
-        //    if (textbox.Text.First() == 'M' || textbox.Text.First() == 'R' || textbox.Text.First() == 'A')
-        //        return true;
-        //    return false;
-        //}
+
         public static bool IsValidName(TextBox textbox)
         {
             bool flag = false;
@@ -86,18 +81,7 @@ namespace ProjectManagementSystem.Utilities
             }
             return false;
         }
-        //public static string GetDesignation(string Id)
-        //{
-        //    char c = Id.First();
-        //    if (c == 'M')
-        //        return "Manager";
-        //    else if (c == 'R')
-        //        return "Reportee";
-        //    else if (c == 'A')
-        //        return "Admin";
-        //    else
-        //        throw new CustomMadeException(Id + " is an invalid Id");
-        //}
+
         public static object IsValidInputId(Type t,string Id)
         {
             if(t == typeof(Admin))
@@ -134,5 +118,37 @@ namespace ProjectManagementSystem.Utilities
             }
             return null;
         }
+
+        public static Manager FindManagerByProject(Project project)
+        {
+            foreach(Manager manager in ManagerDB.GetData())
+            {
+                if (manager.ProjectList.Contains(project))
+                    return manager;
+            }
+            return null;
+        }
+
+        public static List<Reportee> FindReporteesByProject(Project project)
+        {
+            List<Reportee> reporteeList = new List<Reportee>();
+            foreach(Reportee reportee in ReporteeDB.GetData())
+            {
+                if (reportee.Project == project)
+                    reporteeList.Add(reportee);
+            }
+            return reporteeList;
+        }
+        public static List<Reportee> FindReporteesWithNoProject()
+        {
+            List<Reportee> reporteeList = new List<Reportee>();
+            foreach(Reportee rep in ReporteeDB.GetData())
+            {
+                if (rep.Project == null)
+                    reporteeList.Add(rep);
+            }
+            return reporteeList;
+        }
+
     }
 }

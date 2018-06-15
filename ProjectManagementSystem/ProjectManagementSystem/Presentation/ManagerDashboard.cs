@@ -30,7 +30,7 @@ namespace ProjectManagementSystem.Presentation
 
         private void changePasswordMenuItem_Click(object sender, EventArgs e)
         {
-            FrmChangePassword changePass = new FrmChangePassword("Manager",manager);
+            FrmChangePassword changePass = new FrmChangePassword(typeof(Manager),manager);
             changePass.MdiParent = this;
             changePass.Dock = DockStyle.Fill;
             changePass.Show();

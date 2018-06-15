@@ -35,3 +35,4 @@ C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManageme
 C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmManagerDashboard.resources
 C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmEmployee.resources
 C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmProject.resources
+C:\Users\NAVJIT\Documents\GitHub\C-sharp\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.Presentation.FrmAddReporteeToProject.resources

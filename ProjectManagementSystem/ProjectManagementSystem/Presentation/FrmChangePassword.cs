@@ -22,11 +22,11 @@ namespace ProjectManagementSystem.Presentation
         public FrmChangePassword(Type emp,Employee obj)
         {
             employee = emp;
-            if (employee.GetType() == typeof(Admin))
+            if (employee == typeof(Admin))
                 admin = (Admin)obj;
-            else if(employee.GetType() == typeof(Manager))
+            else if(employee == typeof(Manager))
                 manager = (Manager)obj;
-            else if(employee.GetType() == typeof(Reportee))
+            else if(employee == typeof(Reportee))
                 reportee = (Reportee)obj;
             
             InitializeComponent();
@@ -51,13 +51,13 @@ namespace ProjectManagementSystem.Presentation
         {
             bool flag = false;
             if (Validator.IsDataPresent(txtOldPass))
-                if (employee.GetType() == typeof(Admin))
+                if (employee == typeof(Admin))
                     if (admin.Password.Equals(txtOldPass.Text))
                         flag = true;
-                else if (employee.GetType() == typeof(Manager))
+                else if (employee == typeof(Manager))
                     if (manager.Password.Equals(txtOldPass.Text))
                             flag = true;
-                else if (employee.GetType() == typeof(Reportee))
+                else if (employee == typeof(Reportee))
                     if (reportee.Password.Equals(txtOldPass.Text))
                                 flag = true;
                 if(flag)
@@ -79,11 +79,11 @@ namespace ProjectManagementSystem.Presentation
             try {
                  if (ValidateTextBoxes())
                  {
-                    if (employee.GetType() == typeof(Admin))
+                    if (employee == typeof(Admin))
                         admin.Password = txtNewPass.Text;
-                    else if (employee.GetType() == typeof(Manager))
+                    else if (employee == typeof(Manager))
                         manager.Password = txtNewPass.Text;
-                    else if (employee.GetType() == typeof(Reportee))
+                    else if (employee == typeof(Reportee))
                         reportee.Password = txtNewPass.Text;
                     MessageBox.Show("Password Changed Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
