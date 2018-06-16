@@ -59,8 +59,8 @@ namespace ProjectManagementSystem.Presentation
             else if (obj.GetType()==typeof(Project))
             {
                 project = (Project)obj;
-                manager = Validator.FindManagerByProject(project);
-                reporteeList = Validator.FindReporteesByProject(project);
+                manager = Validator.SearchManagerByProject(project.ProjectID);
+                reporteeList = Validator.SearchReporteeByProject(project.ProjectID);
                 projectList = ProjectDB.GetData();
                 projectList.Remove(project);
                 ProjectDB.SaveData(projectList);

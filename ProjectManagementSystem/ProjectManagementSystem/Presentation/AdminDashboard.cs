@@ -54,33 +54,33 @@ namespace ProjectManagementSystem.Presentation
             addProject.Show();
         }
 
-        private void updateManagerMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmEmployee updateMan = new FrmEmployee(typeof(Manager),"Update");
-            updateMan.MdiParent = this;
-            updateMan.Dock = DockStyle.Fill;
-            updateMan.Show();
-        }
+        //private void updateManagerMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    FrmEmployee updateMan = new FrmEmployee(typeof(Manager),"Update");
+        //    updateMan.MdiParent = this;
+        //    updateMan.Dock = DockStyle.Fill;
+        //    updateMan.Show();
+        //}
 
-        private void updateReporteeMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmEmployee updateRep = new FrmEmployee(typeof(Reportee),"Update");
-            updateRep.MdiParent = this;
-            updateRep.Dock = DockStyle.Fill;
-            updateRep.Show();
-        }
+        //private void updateReporteeMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    FrmEmployee updateRep = new FrmEmployee(typeof(Reportee),"Update");
+        //    updateRep.MdiParent = this;
+        //    updateRep.Dock = DockStyle.Fill;
+        //    updateRep.Show();
+        //}
 
-        private void updateProjectMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmProject updateProj = new FrmProject("Update");
-            updateProj.MdiParent = this;
-            updateProj.Dock = DockStyle.Fill;
-            updateProj.Show();
-        }
+        //private void updateProjectMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    FrmProject updateProj = new FrmProject("Update");
+        //    updateProj.MdiParent = this;
+        //    updateProj.Dock = DockStyle.Fill;
+        //    updateProj.Show();
+        //}
 
         private void deleteManagerMenuItem_Click(object sender, EventArgs e)
         {
-            FrmInputId inputId = new FrmInputId(typeof(Admin),admin);
+            FrmInputId inputId = new FrmInputId(typeof(Manager),admin);
             inputId.MdiParent = this;
             inputId.Show();
         }
@@ -101,7 +101,7 @@ namespace ProjectManagementSystem.Presentation
 
         private void searchManagerMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmployee searchMan = new FrmEmployee(typeof(Manager), "Search");
+            FormManager searchMan = new FormManager();
             searchMan.MdiParent = this;
             searchMan.Dock = DockStyle.Fill;
             searchMan.Show();
@@ -109,7 +109,7 @@ namespace ProjectManagementSystem.Presentation
 
         private void searchReporteeMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmployee searchRep = new FrmEmployee(typeof(Reportee), "Search");
+            FormReportee searchRep = new FormReportee();
             searchRep.MdiParent = this;
             searchRep.Dock = DockStyle.Fill;
             searchRep.Show();
@@ -117,7 +117,7 @@ namespace ProjectManagementSystem.Presentation
 
         private void searchProjectMenuItem_Click(object sender, EventArgs e)
         {
-            FrmProject project = new FrmProject("Search");
+            FormProject project = new FormProject();
             project.MdiParent = this;
             project.Dock = DockStyle.Fill;
             project.Show();

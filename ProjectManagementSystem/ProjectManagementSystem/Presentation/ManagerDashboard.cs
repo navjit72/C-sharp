@@ -35,10 +35,5 @@ namespace ProjectManagementSystem.Presentation
             changePass.Dock = DockStyle.Fill;
             changePass.Show();
         }
-
-        private void addReporteeItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

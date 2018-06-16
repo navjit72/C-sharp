@@ -35,13 +35,13 @@
             this.updateDetailsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignRatingItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assignTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.demandsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.managerName = new System.Windows.Forms.ToolStripLabel();
-            this.assignTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,6 @@
             this.addReporteeItem.Name = "addReporteeItem";
             this.addReporteeItem.Size = new System.Drawing.Size(167, 22);
             this.addReporteeItem.Text = "Add Reportee";
-            this.addReporteeItem.Click += new System.EventHandler(this.addReporteeItem_Click);
             // 
             // removeReporteeItem
             // 
@@ -103,8 +102,14 @@
             // assignRatingItem
             // 
             this.assignRatingItem.Name = "assignRatingItem";
-            this.assignRatingItem.Size = new System.Drawing.Size(152, 22);
+            this.assignRatingItem.Size = new System.Drawing.Size(151, 22);
             this.assignRatingItem.Text = "Assign Ratings";
+            // 
+            // assignTaskToolStripMenuItem
+            // 
+            this.assignTaskToolStripMenuItem.Name = "assignTaskToolStripMenuItem";
+            this.assignTaskToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.assignTaskToolStripMenuItem.Text = "Assign Task";
             // 
             // demandsMenuItem
             // 
@@ -149,12 +154,6 @@
             this.managerName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.managerName.Name = "managerName";
             this.managerName.Size = new System.Drawing.Size(0, 22);
-            // 
-            // assignTaskToolStripMenuItem
-            // 
-            this.assignTaskToolStripMenuItem.Name = "assignTaskToolStripMenuItem";
-            this.assignTaskToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.assignTaskToolStripMenuItem.Text = "Assign Task";
             // 
             // FrmManagerDashboard
             // 

@@ -33,10 +33,6 @@
             this.addManagerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addReporteeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addProjectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateManagerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateReporteeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateProjectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteManagerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteReporteeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +54,6 @@
             // 
             this.MenuNav.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addMenuItem,
-            this.updateMenuItem,
             this.deleteMenuItem,
             this.searchMenuItem,
             this.changePasswordMenuItem,
@@ -104,41 +99,6 @@
             this.addProjectMenuItem.ToolTipText = "Add Project";
             this.addProjectMenuItem.Click += new System.EventHandler(this.addProjectMenuItem_Click);
             // 
-            // updateMenuItem
-            // 
-            this.updateMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateManagerMenuItem,
-            this.updateReporteeMenuItem,
-            this.updateProjectMenuItem});
-            this.updateMenuItem.Name = "updateMenuItem";
-            this.updateMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.updateMenuItem.Text = "Update";
-            this.updateMenuItem.ToolTipText = "Update";
-            // 
-            // updateManagerMenuItem
-            // 
-            this.updateManagerMenuItem.Name = "updateManagerMenuItem";
-            this.updateManagerMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.updateManagerMenuItem.Text = "Manager";
-            this.updateManagerMenuItem.ToolTipText = "Update Manager";
-            this.updateManagerMenuItem.Click += new System.EventHandler(this.updateManagerMenuItem_Click);
-            // 
-            // updateReporteeMenuItem
-            // 
-            this.updateReporteeMenuItem.Name = "updateReporteeMenuItem";
-            this.updateReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.updateReporteeMenuItem.Text = "Reportee";
-            this.updateReporteeMenuItem.ToolTipText = "Update Reportee";
-            this.updateReporteeMenuItem.Click += new System.EventHandler(this.updateReporteeMenuItem_Click);
-            // 
-            // updateProjectMenuItem
-            // 
-            this.updateProjectMenuItem.Name = "updateProjectMenuItem";
-            this.updateProjectMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.updateProjectMenuItem.Text = "Project";
-            this.updateProjectMenuItem.ToolTipText = "Update Project";
-            this.updateProjectMenuItem.Click += new System.EventHandler(this.updateProjectMenuItem_Click);
-            // 
             // deleteMenuItem
             // 
             this.deleteMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -153,7 +113,7 @@
             // deleteManagerMenuItem
             // 
             this.deleteManagerMenuItem.Name = "deleteManagerMenuItem";
-            this.deleteManagerMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteManagerMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteManagerMenuItem.Text = "Manager";
             this.deleteManagerMenuItem.ToolTipText = "Delete Manager";
             this.deleteManagerMenuItem.Click += new System.EventHandler(this.deleteManagerMenuItem_Click);
@@ -161,7 +121,7 @@
             // deleteReporteeMenuItem
             // 
             this.deleteReporteeMenuItem.Name = "deleteReporteeMenuItem";
-            this.deleteReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteReporteeMenuItem.Text = "Reportee";
             this.deleteReporteeMenuItem.ToolTipText = "Delete Reportee";
             this.deleteReporteeMenuItem.Click += new System.EventHandler(this.deleteReporteeMenuItem_Click);
@@ -169,7 +129,7 @@
             // deleteProjectMenuItem
             // 
             this.deleteProjectMenuItem.Name = "deleteProjectMenuItem";
-            this.deleteProjectMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.deleteProjectMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteProjectMenuItem.Text = "Project";
             this.deleteProjectMenuItem.ToolTipText = "Delete Project";
             this.deleteProjectMenuItem.Click += new System.EventHandler(this.deleteProjectMenuItem_Click);
@@ -181,14 +141,14 @@
             this.searchReporteeMenuItem,
             this.searchProjectMenuItem});
             this.searchMenuItem.Name = "searchMenuItem";
-            this.searchMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.searchMenuItem.Text = "Search";
-            this.searchMenuItem.ToolTipText = "Search";
+            this.searchMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.searchMenuItem.Text = "Search/Update";
+            this.searchMenuItem.ToolTipText = "Search/Update";
             // 
             // searchManagerMenuItem
             // 
             this.searchManagerMenuItem.Name = "searchManagerMenuItem";
-            this.searchManagerMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchManagerMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchManagerMenuItem.Text = "Manager";
             this.searchManagerMenuItem.ToolTipText = "Search Manager";
             this.searchManagerMenuItem.Click += new System.EventHandler(this.searchManagerMenuItem_Click);
@@ -196,7 +156,7 @@
             // searchReporteeMenuItem
             // 
             this.searchReporteeMenuItem.Name = "searchReporteeMenuItem";
-            this.searchReporteeMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchReporteeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchReporteeMenuItem.Text = "Reportee";
             this.searchReporteeMenuItem.ToolTipText = "Search Reportee";
             this.searchReporteeMenuItem.Click += new System.EventHandler(this.searchReporteeMenuItem_Click);
@@ -204,7 +164,7 @@
             // searchProjectMenuItem
             // 
             this.searchProjectMenuItem.Name = "searchProjectMenuItem";
-            this.searchProjectMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.searchProjectMenuItem.Size = new System.Drawing.Size(152, 22);
             this.searchProjectMenuItem.Text = "Project";
             this.searchProjectMenuItem.ToolTipText = "Search Project";
             this.searchProjectMenuItem.Click += new System.EventHandler(this.searchProjectMenuItem_Click);
@@ -276,10 +236,6 @@
         private System.Windows.Forms.ToolStripMenuItem addManagerMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addReporteeMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addProjectMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateManagerMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateReporteeMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateProjectMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteManagerMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteReporteeMenuItem;

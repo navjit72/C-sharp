@@ -40,8 +40,8 @@ namespace ProjectManagementSystem.Presentation
 
         private bool IsValidData()
         {
-            return Validator.IsValidEmail(txtEmail) || Validator.IsValidName(txtFname) 
-                || Validator.IsValidName(txtLname);
+            return Validator.IsValidName(txtFname) && Validator.IsValidName(txtLname) && 
+                Validator.IsValidEmail(txtEmail);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
