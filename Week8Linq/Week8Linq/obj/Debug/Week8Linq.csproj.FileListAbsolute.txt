@@ -1,0 +1,6 @@
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\bin\Debug\Week8Linq.exe.config
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\bin\Debug\Week8Linq.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\bin\Debug\Week8Linq.pdb
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\obj\Debug\Week8Linq.csprojResolveAssemblyReference.cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\obj\Debug\Week8Linq.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week8Linq\Week8Linq\obj\Debug\Week8Linq.pdb

@@ -1,0 +1,11 @@
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\bin\Debug\Week7LabCSharp.exe.config
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\bin\Debug\Week7LabCSharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\bin\Debug\Week7LabCSharp.pdb
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.csprojResolveAssemblyReference.cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.FrmFileHandling.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.FrmStudentManagement.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.Form3.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.Properties.Resources.resources
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.csproj.GenerateResource.Cache
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.exe
+C:\Users\NAVJIT\Documents\Visual Studio 2015\Projects\Week7LabCSharp\Week7LabCSharp\obj\Debug\Week7LabCSharp.pdb
